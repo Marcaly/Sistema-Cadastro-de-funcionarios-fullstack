@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
@@ -26,7 +25,17 @@ export class EmployeeListComponent implements OnInit {
     });
   }
 
+  employeeDetails(id: number) {
+    this.router.navigate(['employee-details', id]);
+  }
+
   updateEmployee(id: number) {
     this.router.navigate(['update-employee', id]);
+  }
+  deleteEmployee(id: number) {
+    this.employeeService.deleteEmployee(id).subscribe((data) => {
+      console.log(data);
+      this.getEmployees();
+    });
   }
 }
