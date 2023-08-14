@@ -11,11 +11,13 @@
   color: white;
 }
 
+.btn {
+  color: white;
+}
+
 .botao {
   background-color: #169f16;
-  color: white;
 }
 .botao:hover {
   background-color: #008000;
-  color: white;
 }
