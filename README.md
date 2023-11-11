@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-Projeto CRUD Fullstack de cadastro de funcionários feito em Spring Boot 2 e angular 11 com banco de dados MySQL.  
+Projeto CRUD Fullstack de cadastro de funcionários feito em Spring Boot 3 e angular 11 com banco de dados MySQL.  
 
 
 ## Layout web
